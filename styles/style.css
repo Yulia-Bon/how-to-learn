@@ -225,7 +225,6 @@
   padding: 90px 0 90px;
   position: relative;
   overflow: hidden;
-  overflow: hidden;
   z-index: 0;
 }
 
@@ -286,7 +285,6 @@
   padding: 0px;
   min-height: 250px;
   display: flex;
-  padding: 0px;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
@@ -320,7 +318,6 @@
 }
 
 .footer__column-links {
-  padding: 0;
   margin: 0px 0px 16px 0px;
   padding: 0px;
 }
