@@ -9,7 +9,7 @@
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 /*модификатор с ключ-значение для шапки, аналогично для подвала*/
-.logo_place-header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -30,23 +30,26 @@
   align-items: center;
 }
 .header__title {
-  left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  position: relative;
+  position: absolute;
   width: 730px;
   z-index: 3;
+  margin: 0px 0px 0px 64px;
+  padding: 0px;
 }
 /*текст с ссылкой до "узнать"*/
 .header__subtitle {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  width: 388px;
+  max-width: 388px;
   position: absolute;
-  bottom: 30px;
+  margin: 0px;
   left: 64px;
+  bottom: 30px;
+  padding: 0px;
   z-index: 3;
 }
 /*ссылка узнать*/
@@ -87,7 +90,6 @@
   width: 80%;
   margin: 0 auto;
   font-size: 24px;
-  min-width: 784px;
 }
 
 .two-columns__brief {
@@ -96,22 +98,22 @@
   font-size: 18px;
   color: #2f80ed;
   font-weight: normal;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .two-columns__main-text {
   width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
   font-size: 24px;
   line-height: 34px;
   margin: auto 0px 30px;
+  padding: 0px;
 }
 /*последний параграф, убрала нижний отступ псевдо-классом*/
-.two-columns__paragraph_last-child {
-  font-size: 24px;
-  line-height: 34px;
+.last-child {
   margin: auto 0px 0px;
 }
 /*акцент на текст "вывод:"*/
@@ -133,6 +135,7 @@
   font-weight: bold;
   margin: 0;
   padding: 0px 20%;
+  z-index: 10;
 }
 
 .section-subtitle {
@@ -143,6 +146,7 @@
   font-size: 24px;
   margin: 20px 0px 0px 0px;
   padding: 0px 20%;
+  z-index: 5;
 }
 
 .table {
@@ -152,12 +156,13 @@
   justify-content: space-between;
   align-content: space-between;
   width: 1100px;
-  padding: 60px 0px 0px;
+  padding: 0px 0px 0px;
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  z-index: 1;
 }
 
 .table__heading {
@@ -166,6 +171,7 @@
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 20px;
+  padding: 0px;
 }
 
 .table__text {
@@ -174,17 +180,18 @@
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 0px;
+  padding: 0px;
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-size: 876px 637px;
   position: relative;
   background: #f2f2f2 url(../images/feynman5.png) no-repeat bottom left;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   font-size: 120px;
   line-height: 1.15;
   text-align: center;
@@ -199,6 +206,7 @@
   font-weight: normal;
   margin: 70px 0 0;
   text-align: center;
+  padding: 0px;
 }
 
 .feynman__link {
@@ -217,29 +225,32 @@
   padding: 90px 0 90px;
   position: relative;
   overflow: hidden;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .section-title_theme-dark {
   color: #fff;
-  width: 60%;
+  z-index: 3;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
-  width: 60%;
   margin-top: 20px;
+  z-index: 2;
 }
 
 .table_theme_dark {
   margin: 0 auto;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: #fff;
   margin-right: 0;
-  z-index: 10;
   margin-top: 80px;
+  z-index: 2;
 }
 
 .kaufman__triangle {
@@ -251,9 +262,8 @@
   background-position: center;
   position: absolute;
   top: 0;
-  overflow: hidden;
+  z-index: -1;
   right: -210px;
-  z-index: 0;
 }
 
 .footer {
@@ -273,12 +283,16 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
   padding: 0px;
-  max-height: 250px;
+  min-height: 250px;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.logo_place-footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
@@ -286,21 +300,16 @@
 }
 
 .footer__author {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   line-height: 25px;
   font-size: 18px;
   color: #fff;
   margin: 18px 0px 18px;
-}
-
-.footer__columns_info {
-  display: flex;
+  padding: 0px;
 }
 
 .footer__column_content_info {
-  margin-right: 16px;
+  margin: 0px 0px 16px;
+  padding: 0px;
 }
 
 .footer__column-heading {
@@ -312,11 +321,13 @@
 
 .footer__column-links {
   padding: 0;
-  margin-bottom: 16px;
+  margin: 0px 0px 16px 0px;
+  padding: 0px;
 }
 
 .footer__list-item {
   display: block;
+  margin: 0px;
 }
 
 .footer__link {
