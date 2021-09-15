@@ -28,12 +28,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .header__title {
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  position: absolute;
   width: 730px;
   z-index: 3;
   margin: 0px 0px 0px 64px;
@@ -99,6 +99,7 @@
   color: #2f80ed;
   font-weight: normal;
   margin: 0px;
+  padding: 0px;
 }
 
 .two-columns__main-text {
@@ -113,7 +114,7 @@
   padding: 0px;
 }
 /*последний параграф, убрала нижний отступ псевдо-классом*/
-.last-child {
+.two-columns__paragraph:last-child {
   margin: auto 0px 0px;
 }
 /*акцент на текст "вывод:"*/
