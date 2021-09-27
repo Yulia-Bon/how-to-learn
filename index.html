@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Научиться учиться</title>
   </head>
@@ -22,8 +21,14 @@
           <a href="#" class="header__link">Узнать →</a>
         </p>
         <!-- 5 и 6 элементы элемент-->
-        <div class="header__main-illustration"></div>
-        <div class="header__square-pic"></div>
+        
+          <img
+                src="./images/header-image.png"
+                class="header__main-illustration"
+                alt="Решетников федор «опять двойка»"
+              />
+        
+        <div class="header__square-pic rotation"></div>
       </header>
 
       <main class="content">
@@ -217,17 +222,23 @@
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
             <h2 class="khan__title">Весь мир — школа</h2>
-            <p class="khan__quote">
+            <blockquote class="khan__quote">
               Страсть и новаторство Сала Хана меняют процесс обучения миллионов
               студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
               всем, кто занимается образованием — так учащиеся повсюду смогут
               получить навыки и знания, которые приносят успех в школе, карьере
               и жизни.
-            </p>
+            </blockquote>
             <p class="khan__quote-author">Джордж Лукас</p>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
             <div class="khan__book-container">
-              <div class="khan__book-pic"></div>
+              
+                <img
+                src="./images/khan-book.jpg"
+                class="khan__book-pic"
+                alt="книга 'Весь мир-школа'"
+              />
+              
               <a
                 href="https://www.labirint.ru/books/483575/"
                 target="_blank"
@@ -327,24 +338,31 @@
           Больше материалов о техниках и лайфхаках обучения
         </p>
         <div class="resources__logo-zone">
-          <a
-            href="#/"
-            target="_blank"
-            class="resources__logo resources__logo_arzamas"
-          ></a>
-          <a
-            href="#/"
-            target="_blank"
+          
+          <a href="#" target="_blank"> <img
+          src="./images/logo/resources-arzamas.svg"
+          alt="Армазас"
+          class="resources__logo resources__logo_arzamas"
+        > </a>
+
+          <a href="#" target="_blank"> <img
+            src="./images/logo/resources-n1.svg"
+            alt="N+1"
             class="resources__logo resources__logo_n1"
           ></a>
-          <a
-            href="#/"
-            target="_blank"
+
+          <a href="#"
+            target="_blank"> <img
+            src="./images/logo/resources-strelka.svg"
+            alt="Стрелка"
             class="resources__logo resources__logo_strelka"
           ></a>
+
           <a
             href="#"
-            target="_blank"
+            target="_blank"> <img
+            src="./images/logo/resources-polka.svg"
+            alt="Полка"
             class="resources__logo resources__logo_polka"
           ></a>
         </div>
